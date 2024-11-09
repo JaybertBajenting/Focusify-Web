@@ -1,0 +1,18 @@
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/focusify
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+
