@@ -15,17 +15,21 @@ const Login = () => {
 
   const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
+    console.log("username", username);
+    console.log("password",password);
 
     const response = await fetch(
-      "http://locahost:8080/api/v1/auth/login",
+      
+      "http://localhost:8080/api/v1/auth/login",
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          username: username,
-          password: password,
+          username,
+          password
         }),
       }
     );
