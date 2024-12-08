@@ -3,6 +3,9 @@ server:
     accesslog:
       enabled: true
 
+
+
+
 spring:
   jpa:
     hibernate:
@@ -11,8 +14,9 @@ spring:
 
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/focusify
-    username: postgres
-    password: root
+    url: ${dbUrl}
+    username: ${dbUser}
+    password: ${dbPassword}
     driver-class-name: org.postgresql.Driver
 
+jwtSecret: ${jwtSecret}

@@ -9,7 +9,7 @@ public class FocusifyApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(FocusifyApplication.class, args);
 	}
-	
+
 
 }
 
