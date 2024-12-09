@@ -32,10 +32,6 @@ const Main = () => {
 
 
 
-
-
-
-
   const handleBackgroundIamge = (id: number) => {
     setIndex("/background/fullbg" + id + ".png");
     console.log(index);

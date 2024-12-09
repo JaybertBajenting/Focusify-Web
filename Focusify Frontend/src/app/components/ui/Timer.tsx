@@ -106,7 +106,7 @@ function Timer() {
   const handleAddTimeToDb = async (userId: number) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/api/v1/auth/user/task/addTime/${userId}?time=${time}`,
+        `https://focusify-web.onrender.com/api/v1/auth/user/task/addTime/${userId}?time=${time}`,
         {
           method: "POST",
         }

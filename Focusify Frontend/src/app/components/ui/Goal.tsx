@@ -48,7 +48,7 @@ const Goal = () => {
   const getOngoingGoals = async (id: number) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/api/v1/auth/user/task/ongoing-goals/${id}`,
+        `https://focusify-web.onrender.com/api/v1/auth/user/task/ongoing-goals/${id}`,
         {
           method: "GET",
         }
@@ -71,7 +71,7 @@ const Goal = () => {
   const getCompletedGoals = async (id: number) => {
     try {
       const response = await fetch(
-        `https://focusify.onrender.com/api/v1/auth/user/task/completed-goals/${id}`,
+        `https://focusify-web.onrender.com/api/v1/auth/user/task/completed-goals/${id}`,
         {
           method: "GET",
         }
@@ -98,7 +98,7 @@ const Goal = () => {
       if (!goal) return;
 
       const response = await fetch(
-        `https://focusify.onrender.com/api/v1/auth/user/task/deleteOnGoingGoal/${userId}/${goal.text}`,
+        `https://focusify-web.onrender.com/api/v1/auth/user/task/deleteOnGoingGoal/${userId}/${goal.text}`,
         {
           method: "DELETE",
         }
@@ -118,7 +118,7 @@ const Goal = () => {
     try {
       const userId = parsedUser?.user.id;
       const response = await fetch(
-        `https://focusify.onrender.com/api/v1/auth/user/task/addFinishedGoal/${userId}/${goal.text}`,
+        `https://focusify-web.onrender.com/api/v1/auth/user/task/addFinishedGoal/${userId}/${goal.text}`,
         {
           method: "POST",
         }
@@ -137,7 +137,7 @@ const Goal = () => {
     try {
       const userId = parsedUser?.user.id;
       const response = await fetch(
-        `https://focusify.onrender.com/api/v1/auth/user/task/addOnGoingGoal/${userId}/${goalText}`,
+        `https://focusify-web.onrender.com/api/v1/auth/user/task/addOnGoingGoal/${userId}/${goalText}`,
         {
           method: "POST",
         }

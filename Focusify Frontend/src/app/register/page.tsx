@@ -28,7 +28,7 @@ const Register = () => {
 
   const onSubmit = async (data: FormData) => {
     const response = await fetch(
-      "http://locahost:8080/api/v1/auth/register",
+      "https://focusify-web.onrender.com/api/v1/auth/register",
       {
         method: "POST",
         headers: {

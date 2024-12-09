@@ -19,7 +19,7 @@ const ProfilePage: React.FC = () => {
   const fetchProfilePicture = async (userId: string) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/api/v1/auth/user/getProfilePicture/${userId}`,
+        `https://focusify-web.onrender.com/api/v1/auth/user/getProfilePicture/${userId}`,
         {
           method: "GET",
         }
@@ -53,7 +53,7 @@ const ProfilePage: React.FC = () => {
 
         try {
           const response = await fetch(
-            `https://focusify.onrender.com/api/v1/auth/user/updateProfilePicture/${userId}`,
+            `https://focusify-web.onrender.com/api/v1/auth/user/updateProfilePicture/${userId}`,
             {
               method: "PUT",
               body: formData,

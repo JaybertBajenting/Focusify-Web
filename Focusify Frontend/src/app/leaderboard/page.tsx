@@ -18,7 +18,7 @@ const Leaderboard = () => {
   const handleGetUsers = async () => {
     try {
       const response = await fetch(
-        "http://localhost:8080/api/v1/auth/user/task/getLeaderBoards",
+        "https://focusify-web.onrender.com/api/v1/auth/user/task/getLeaderBoards",
         {
           method: "GET",
         }
